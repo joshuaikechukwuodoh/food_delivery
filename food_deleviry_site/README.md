@@ -37,7 +37,38 @@ A full-stack food delivery platform built with Node.js, Express, MongoDB, and [o
 ## 🚀 Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/joshuaikechukwuodoh/food-delivery-site.git
    cd food-delivery-site
+   ```
+
+   ```
+   Test the site
+   Based on the server.js and route files, here are the main API endpoints you can test:
+   Authentication:
+   POST /api/auth/register - Register a new user
+   POST /api/auth/login - Login user
+   POST /api/auth/logout - Logout user
+   Users:
+   GET /api/users/profile - Get user profile
+   PUT /api/users/profile - Update user profile
+   Restaurants:
+   GET /api/restaurants - Get all restaurants
+   GET /api/restaurants/:id - Get specific restaurant
+   POST /api/restaurants - Create restaurant (admin only)
+   Orders:
+   POST /api/orders - Create new order
+   GET /api/orders - Get user's orders
+   GET /api/orders/:id - Get specific order
+   PUT /api/orders/:id/status - Update order status
+   Payments:
+   POST /api/payments/create - Create payment
+   POST /api/payments/verify - Verify payment
+   Chat:
+   WebSocket connection for real-time chat
+   Tracking:
+   WebSocket connection for real-time order tracking
+   To test these endpoints, you can use tools like:
+   Postman
    ```
